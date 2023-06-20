@@ -1,6 +1,6 @@
 # gobpf
 
-[![GoDoc](https://godoc.org/github.com/golang/gddo?status.svg)](http://godoc.org/github.com/iovisor/gobpf) [![CI](https://github.com/iovisor/gobpf/actions/workflows/ci.yml/badge.svg)](https://github.com/iovisor/gobpf/actions/workflows/ci.yml)
+[![GoDoc](https://godoc.org/github.com/golang/gddo?status.svg)](http://godoc.org/github.com/tkozyra/gobpf) [![CI](https://github.com/tkozyra/gobpf/actions/workflows/ci.yml/badge.svg)](https://github.com/tkozyra/gobpf/actions/workflows/ci.yml)
 
 This repository provides go bindings for the [bcc framework](https://github.com/iovisor/bcc)
 as well as low-level routines to load and use eBPF programs from .elf
@@ -16,12 +16,12 @@ changing following bcc and Linux updates and releases.
 eBPF requires a recent Linux kernel. A good feature list can be found here:
 https://github.com/iovisor/bcc/blob/master/docs/kernel-versions.md
 
-### `github.com/iovisor/gobpf/bcc`
+### `github.com/tkozyra/gobpf/bcc`
 
 Install the latest released version of [libbcc](https://github.com/iovisor/bcc/blob/master/INSTALL.md)
 (either using a package manager or by building from source).
 
-### `github.com/iovisor/gobpf/elf`
+### `github.com/tkozyra/gobpf/elf`
 
 #### Building ELF Object Files
 
@@ -38,7 +38,7 @@ sections (`SEC("...")`). The following are currently supported:
 * `uretprobe/...`
 * `xdp/...`
 
-Map definitions must correspond to `bpf_map_def` from [the elf package](https://github.com/iovisor/gobpf/blob/master/elf/include/bpf_map.h).
+Map definitions must correspond to `bpf_map_def` from [the elf package](https://github.com/tkozyra/gobpf/blob/master/elf/include/bpf_map.h).
 Otherwise, you will encounter an error like `only one map with size 280 bytes allowed per section (check bpf_map_def)`.
 
 The [Cilium](https://github.com/cilium/cilium) BPF docs contain helpful info

@@ -31,10 +31,10 @@ import (
 	"syscall"
 	"unsafe"
 
-	_ "github.com/iovisor/gobpf/elf/include"
-	_ "github.com/iovisor/gobpf/elf/include/uapi/linux"
-	"github.com/iovisor/gobpf/pkg/bpffs"
-	"github.com/iovisor/gobpf/pkg/cpuonline"
+	_ "github.com/tkozyra/gobpf/elf/include"
+	_ "github.com/tkozyra/gobpf/elf/include/uapi/linux"
+	"github.com/tkozyra/gobpf/pkg/bpffs"
+	"github.com/tkozyra/gobpf/pkg/cpuonline"
 )
 
 /*

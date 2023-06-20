@@ -27,10 +27,10 @@ import (
 	"testing"
 	"unsafe"
 
-	"github.com/iovisor/gobpf/bcc"
-	"github.com/iovisor/gobpf/elf"
-	"github.com/iovisor/gobpf/pkg/bpffs"
-	"github.com/iovisor/gobpf/pkg/progtestrun"
+	"github.com/tkozyra/gobpf/bcc"
+	"github.com/tkozyra/gobpf/elf"
+	"github.com/tkozyra/gobpf/pkg/bpffs"
+	"github.com/tkozyra/gobpf/pkg/progtestrun"
 )
 
 // redefine flags here as cgo in test is not supported
